@@ -4,9 +4,9 @@
 ##                                                                                 ##
 ## Author: Makana O' Ke Akua Edwards                                               ##
 ##                                                                                 ##
-## Date: 6/1/2019                                                                  ##
+## Date: 11/4/2021                                                                 ##
 ##                                                                                 ##
-## Time: 1:08 am EST                                                               ##
+## Time: 3:22 pm EST                                                               ##
 ##                                                                                 ##
 ## Description: This is a JavaScript plugin that takes the inner text of a given   ##
 ## element, then outputs the text iteratively in a delayed fashion                 ##
@@ -18,11 +18,13 @@
 ##  How to use: simply name your classes as such 'type-500' (the word 'type'       ##
 ##  followed by a hyphen and a number). That number represents the type speed in   ##
 ##  milliseconds. Any innerHTML within this specified class will be manipulated by ##
-##  the plugin. You can also call the Typer function and bind the action to an     ##
-##  element or event.                                                              ##
+##  the plugin. You can also create an instance of the Typer and bind the action to## 
+##  an element or event                                                            ##
+##                                                                                 ##
 ##                                                                                 ##
 ##  For example:                                                                   ##         
-##       Typer('.insertclass').Start(150);                                           ##
+##    let type = new Typer();                                                      ##
+##    type.Start(100)                                                              ##
 ##                                                                                 ##
 ##                                                                                 ##
 ##                                                                                 ##
