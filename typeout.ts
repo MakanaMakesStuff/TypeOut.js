@@ -1,20 +1,17 @@
 export class Typer {
-    temp: any
-    obj: any
-
     constructor(){
         if(!(this instanceof Typer)) return new Typer()
     }
 
     start (selector: string, delay: number) {
-        this.obj = document.querySelectorAll(selector)
-        const children: Element[] = Array.from(this.obj)
+        const elements = document.querySelectorAll(selector)
+        const children: Element[] = Array.from(elements)
         for(const child of children) this.process(child, delay)
     }
 
     set () {
-        this.obj = document.querySelectorAll("[class*='type-']")
-        const children: Element[] = Array.from(this.obj)
+        const elements = document.querySelectorAll("[class*='type-']")
+        const children: Element[] = Array.from(elements)
         for(const child of children) this.process(child)
     }
 
