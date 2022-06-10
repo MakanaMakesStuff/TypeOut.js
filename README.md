@@ -5,7 +5,7 @@ You can simply download the script and include/reference it in one of yours proj
 - You can specify a classname on your DOM elements such as, 'type-500'. So when you add this class, you must enter 'type-' followed by any number representing miliseconds '-500.' This particluar classname will iterate through the text on document load at one character per 500 miliseconds(5 seconds).
 - You can create an instance of the Typer class and bind it to events. For example..
   <p>
-  <code>let type = new Typer()</code><br>
-  <code>type.Start('.example', 500)</code>
+  <code>let typer = new Typer()</code><br>
+  <code>typer.Start('.example', 500)</code>
 </p>
 <b>Note:</b> In the second implementation above we create an instance of Typer, then we pass a className and number representing miliseconds to the Start() method. Now it will be much easier to bind the execution of code to events such as button clicks or scroll events. Whatever floats your code :)
